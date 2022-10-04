@@ -30,9 +30,11 @@ public class FrmPrincipal extends JFrame
     private HashMap<String,HashMap<String, ArrayList<Tache>>> monPlanning;
 
     private DefaultMutableTreeNode racine;
-    private DefaultMutableTreeNode noeudTheme;
-    private DefaultMutableTreeNode noeudProjet;
-    private DefaultMutableTreeNode noeudTache;
+    private DefaultMutableTreeNode dmtnTheme;
+    private DefaultMutableTreeNode dmtnProjet;
+    private DefaultMutableTreeNode dmtnTache;
+    private DefaultMutableTreeNode dmtnNom;
+    private DefaultMutableTreeNode dmtnDoing;
     private DefaultTreeModel model;
     public FrmPrincipal()
     {
@@ -102,15 +104,15 @@ public class FrmPrincipal extends JFrame
                 racine.removeAllChildren();
                 for (String keyTheme:monPlanning.keySet())
                 {
-                    DefaultMutableTreeNode dmtnTheme=new DefaultMutableTreeNode(keyTheme);
+                    dmtnTheme=new DefaultMutableTreeNode(keyTheme);
                     for (String keyProjet:monPlanning.get(keyTheme).keySet())
                     {
-                        DefaultMutableTreeNode dmtnProjet=new DefaultMutableTreeNode(keyProjet);
+                        dmtnProjet=new DefaultMutableTreeNode(keyProjet);
                         for (Tache lesTaches:monPlanning.get(keyTheme).get(keyProjet))
                         {
-                            DefaultMutableTreeNode dmtnTache=new DefaultMutableTreeNode(lesTaches.getNomTache());
-                            DefaultMutableTreeNode dmtnNom=new DefaultMutableTreeNode(lesTaches.getNomDeveloppeur());
-                            DefaultMutableTreeNode dmtnDoing=new DefaultMutableTreeNode(lesTaches.isEstTerminee());
+                            dmtnTache=new DefaultMutableTreeNode(lesTaches.getNomTache());
+                            dmtnNom=new DefaultMutableTreeNode(lesTaches.getNomDeveloppeur());
+                            dmtnDoing=new DefaultMutableTreeNode(lesTaches.isEstTerminee());
                             dmtnProjet.add(dmtnTache);
                             dmtnProjet.add(dmtnNom);
                             dmtnProjet.add(dmtnDoing);
