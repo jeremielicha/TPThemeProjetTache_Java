@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Vues.FrmPrincipal">
+  <grid id="27dc6" binding="pnlRoot" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="822" height="386"/>
+    </constraints>
+    <properties>
+      <preferredSize width="700" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="199c" class="javax.swing.JLabel" binding="lblTitre">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Century Gothic" size="24"/>
+          <horizontalAlignment value="0"/>
+          <text value="Thèmes - Projets - Tâches"/>
+        </properties>
+      </component>
+      <component id="fac27" class="javax.swing.JLabel" binding="lblTheme">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text value="Liste des thèmes"/>
+        </properties>
+      </component>
+      <component id="c35b9" class="javax.swing.JLabel" binding="lblProjet">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text value="Liste des projets"/>
+        </properties>
+      </component>
+      <component id="47c17" class="javax.swing.JList" binding="lstProjets">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Projet 1"/>
+            <item value="Projet 2"/>
+            <item value="Projet 3"/>
+            <item value="Projet 4"/>
+            <item value="Projet 5"/>
+            <item value="Projet 6"/>
+            <item value="Projet 7"/>
+            <item value="Projet 8"/>
+          </model>
+        </properties>
+      </component>
+      <component id="ee648" class="javax.swing.JList" binding="lstThemes">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Mobile"/>
+            <item value="WEB"/>
+            <item value="Réseau"/>
+          </model>
+        </properties>
+      </component>
+      <component id="fc0b0" class="javax.swing.JLabel" binding="lblTache">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="132" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Nom de la tâche"/>
+        </properties>
+      </component>
+      <component id="1f346" class="javax.swing.JTextField" binding="txtNomTache">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="148" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="69f4f" class="javax.swing.JLabel" binding="lblNomEmploye">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Assignée à"/>
+        </properties>
+      </component>
+      <component id="3a6ef" class="javax.swing.JComboBox" binding="cboEmployes">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Enzo"/>
+            <item value="Noa"/>
+            <item value="Lilou"/>
+            <item value="Milo"/>
+            <item value="Virginie"/>
+            <item value="Lucile"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cd068" class="javax.swing.JTree" binding="trPlanning">
+        <constraints>
+          <grid row="1" column="4" row-span="4" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ff7e9" class="javax.swing.JButton" binding="btnValider">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Valider"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
