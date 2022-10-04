@@ -113,9 +113,9 @@ public class FrmPrincipal extends JFrame
                             dmtnTache=new DefaultMutableTreeNode(lesTaches.getNomTache());
                             dmtnNom=new DefaultMutableTreeNode(lesTaches.getNomDeveloppeur());
                             dmtnDoing=new DefaultMutableTreeNode(lesTaches.isEstTerminee());
+                            dmtnTache.add(dmtnNom);
+                            dmtnTache.add(dmtnDoing);
                             dmtnProjet.add(dmtnTache);
-                            dmtnProjet.add(dmtnNom);
-                            dmtnProjet.add(dmtnDoing);
                             dmtnTheme.add(dmtnProjet);
                             racine.add(dmtnTheme);
                         }
